@@ -26,9 +26,8 @@ const DEVELOPERS = [
 
 const CONTRIBUTORS = [
   // Add actual contributor names here
-  { name: 'Sarah Chen', role: 'Session 03' },
-  { name: 'Michael Ross', role: 'Security' },
-  { name: 'David Kim', role: 'Testing' },
+  { name: 'Kavin', role: 'Day 1' },
+  { name: 'Ishan', role: 'Day 2' },
 ]
 
 // --- SUB-COMPONENTS ---
