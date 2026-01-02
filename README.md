@@ -35,7 +35,7 @@ blockchain-skilllab/
 #### Routes (Folders in `app/`):
 - Must be **lowercase** and **kebab-case**.
 - Format: `d{day}-session-{number}`
-- Example: `d3-session-1` (Day 3, Session 1)
+- Example: `d4-session-1` (Day 3, Session 1)
 - Example: `d4-session-2` (Day 4, Session 2)
 
 #### Components (Files in `components/`):

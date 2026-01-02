@@ -80,13 +80,13 @@ export default function Navbar() {
                   
                   <div className="p-1">
                     {[
-                      { day: 1, sessions: 3, available: 2 },
-                      { day: 2, sessions: 3, available: 0 },
-                      { day: 3, sessions: 3, available: 0 },
-                      { day: 4, sessions: 3, available: 0 },
-                      { day: 5, sessions: 3, available: 0 }
+                      { day: 1, sessions: 3, available: 3, path: '/d1-session-1' },
+                      { day: 2, sessions: 3, available: 3, path: '/d2-session-1' },
+                      { day: 3, sessions: 3, available: 0, path: '/' },
+                      { day: 4, sessions: 3, available: 1, path: '/d4-session-1' },
+                      { day: 5, sessions: 3, available: 0, path: '/' }
                     ].map((item) => (
-                      <Link key={item.day} href="/">
+                      <Link key={item.day} href={item.path}>
                         <div className="group flex justify-between items-center p-3 hover:bg-neutral-900 transition-colors border-l-2 border-transparent hover:border-blue-600">
                           <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors">
                             Day 0{item.day}
@@ -178,12 +178,18 @@ export default function Navbar() {
                   <span className="text-xs font-mono uppercase tracking-widest">Curriculum</span>
                 </div>
                 <div className="space-y-1 pl-4 border-l border-neutral-800">
-                  {[1, 2, 3, 4, 5].map((day) => (
-                    <Link key={day} href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                  {[
+                    { day: 1, available: true, path: '/d1-session-1' },
+                    { day: 2, available: true, path: '/d2-session-1' },
+                    { day: 3, available: false, path: '/' },
+                    { day: 4, available: true, path: '/d4-session-1' },
+                    { day: 5, available: false, path: '/' }
+                  ].map((item) => (
+                    <Link key={item.day} href={item.path} onClick={() => setIsMobileMenuOpen(false)}>
                       <div className="py-3 flex justify-between items-center text-neutral-300 hover:text-white border-b border-neutral-900">
-                        <span className="text-lg font-bold">Day 0{day}</span>
+                        <span className="text-lg font-bold">Day 0{item.day}</span>
                         <span className="text-[10px] font-mono text-neutral-600">
-                          {day === 1 ? 'AVAILABLE' : 'LOCKED'}
+                          {item.available ? 'AVAILABLE' : 'LOCKED'}
                         </span>
                       </div>
                     </Link>

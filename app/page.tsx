@@ -33,18 +33,8 @@ const CURRICULUM_DATA = [
     ], 
     icon: <Terminal className="w-5 h-5" />
   },
-  { 
+    { 
     day: 3, 
-    title: "EVM Deep Dive",
-    sessions: [
-      { title: 'Ethereum Deep Dive', topics: ['EVM Architecture', 'Gas & Fees', 'Account Model'], link: '/d3-session-1', available: true },
-      { title: 'Smart Contract Development', topics: ['Solidity Basics', 'Contract Deployment', 'Testing'], link: '#', available: false },
-      { title: 'DApp Development', topics: ['Web3.js', 'Frontend Integration', 'Wallet Connection'], link: '/d3-session-3', available: false }
-    ], 
-    icon: <Layers className="w-5 h-5" />
-  },
-  { 
-    day: 4, 
     title: "High Throughput",
     sessions: [
       { title: 'Solana Architecture', topics: ['Proof of History', 'Parallel Processing', 'Program Development'], link: '#', available: false },
@@ -52,6 +42,16 @@ const CURRICULUM_DATA = [
       { title: 'Layer 2 Solutions', topics: ['Lightning Network', 'Rollups', 'Sidechains'], link: '#', available: false }
     ], 
     icon: <Zap className="w-5 h-5" />
+  },
+  { 
+    day: 4, 
+    title: "EVM Deep Dive",
+    sessions: [
+      { title: 'Ethereum Deep Dive', topics: ['EVM Architecture', 'Gas & Fees', 'Account Model'], link: '/d4-session-1', available: true },
+      { title: 'Smart Contract Development', topics: ['Solidity Basics', 'Contract Deployment', 'Testing'], link: '#', available: false },
+      { title: 'DApp Development', topics: ['Web3.js', 'Frontend Integration', 'Wallet Connection'], link: '/d4-session-3', available: false }
+    ], 
+    icon: <Layers className="w-5 h-5" />
   },
   { 
     day: 5, 
