@@ -55,11 +55,11 @@ const CURRICULUM_DATA = [
   },
   {
     day: 5,
-    title: "Future Tech",
+    title: "Algorand",
     sessions: [
-      { title: 'Algorand Consensus', topics: ['Pure Proof of Stake', 'Byzantine Agreement', 'Fast Finality'], link: '#', available: false },
-      { title: 'Cross-Chain Integration', topics: ['Bridges', 'Interoperability', 'Multi-Chain Apps'], link: '#', available: false },
-      { title: 'Future of Blockchain', topics: ['Scalability Solutions', 'Privacy Tech', 'Industry Trends'], link: '#', available: false }
+      { title: 'Algorand Consensus', topics: ['Pure Proof of Stake', 'VRFs', 'Byzantine Agreement', 'Instant Finality'], link: '/d5-session-1', available: true },
+      { title: 'Algorand Architecture', topics: ['Node Types', 'Account Model', 'ASAs', 'State Proofs'], link: '/d5-session-2', available: true },
+      { title: 'PyTeal Smart Contracts', topics: ['TEAL', 'Stateful Apps', 'Deployment', 'Interaction'], link: '/d5-session-3', available: true }
     ],
     icon: <Globe className="w-5 h-5" />
   },
